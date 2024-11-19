@@ -55,7 +55,7 @@ body {
     background-color: #3498db;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
     font-size: 16px;
 }
 
@@ -114,6 +114,25 @@ tr:hover {
     background-color: #2c3e50;
     color: white;
 }
+
+.marquee {
+    background-color: #ffeb3b;
+    color: #000;
+    padding: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.marquee span {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
 </style>
 </head>
 <body>
@@ -124,6 +143,9 @@ tr:hover {
 
 <div class="container">
     <div class="main">
+        <div class="marquee">
+            <span>抢先获得好域名，立即行动！即可联系QQ1104382467  即刻下单，支持阿里云，腾讯云等等  GO!GO!GO!</span>
+        </div>
         <p><strong>当前用户：65</strong> &nbsp;&nbsp; <strong>网站：60</strong></p>
         <p>我们正在出售以 <strong>outlook163.eu.org</strong> 为后缀的优质域名。这些域名非常适合那些希望在阿里云、腾讯云等主流云平台上搭建网站或应用的企业和个人开发者。</p>
         <p>此域名不仅有助于提升品牌形象，还能够增加用户的信任度。</p>
